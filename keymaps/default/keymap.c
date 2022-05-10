@@ -102,5 +102,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 layer_state_t layer_state_set_user(layer_state_t state) {
-  return update_tri_layer_state(state, _LOWER, _RAISE, _ADJUST);
+    // switch (get_highest_layer(state)) {
+    //     case _QWERTY:
+    //         rgb_matrix_mode(RGB_MATRIX_CUSTOM_qwerty);
+    //         break;
+    //     case _LOWER:
+    //         rgb_matrix_mode(RGB_MATRIX_CUSTOM_lower);
+    //         break;
+    //     case _RAISE:
+    //         rgb_matrix_mode(RGB_MATRIX_CUSTOM_raise);
+    //         break;
+    //     case _ADJUST:
+    //         rgb_matrix_mode(RGB_MATRIX_CUSTOM_adjust);
+    //         break;
+    // }
+    return update_tri_layer_state(state, _LOWER, _RAISE, _ADJUST);
 }
