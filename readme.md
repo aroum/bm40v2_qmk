@@ -5,7 +5,7 @@ My fork bm40v2 with [Watchman-layout](https://github.com/aroum/Watchman-layouts)
 
 # Compile
 
-copy ```QMK/bm40v2\``` to ```qmk_firmware\keyboards\```
+copy ```QMK/bm40v2``` to ```qmk_firmware/keyboards```
 
 and run 
 
